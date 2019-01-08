@@ -1,0 +1,4 @@
+Sitemap: https://the-arctech.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: the-arctech.github.io
