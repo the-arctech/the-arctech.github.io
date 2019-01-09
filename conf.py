@@ -150,7 +150,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "monospace"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -1341,3 +1341,6 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
+# Other options for theme: 'dark, dark-grey, solarized-dark, standard'
+GLOBAL_CONTEXT['HACK_VARIANT'] = 'dark-grey'
