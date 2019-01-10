@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "arctech"  # (translatable)
-BLOG_TITLE = "arctech"  # (translatable)
+BLOG_TITLE = "{arctech}"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://the-arctech.github.io/"
@@ -150,7 +150,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "monospace"
+THEME = "bootstrap3-jinja"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -1106,7 +1106,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 
 # Modify the number of Post per Index Page
 # Defaults to 10
-# INDEX_DISPLAY_POST_COUNT = 10
+INDEX_DISPLAY_POST_COUNT = 1
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.
@@ -1342,5 +1342,5 @@ GLOBAL_CONTEXT = {}
 # rendered
 GLOBAL_CONTEXT_FILLER = []
 
-# Other options for theme: 'dark, dark-grey, solarized-dark, standard'
-GLOBAL_CONTEXT['HACK_VARIANT'] = 'dark-grey'
+#USED FOR HACK THEME:  Other options for theme: 'dark, dark-grey, solarized-dark, standard'
+#GLOBAL_CONTEXT['HACK_VARIANT'] = 'dark-grey'
