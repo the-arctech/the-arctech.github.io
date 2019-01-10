@@ -7,46 +7,70 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://the-arctech.github.io/</loc>
-  <lastmod>2019-01-09T00:37:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/2019/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/archive.html</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/categories/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/categories/blog/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://the-arctech.github.io/categories/ctf/</loc>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/categories/github/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://the-arctech.github.io/categories/hacking/</loc>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/categories/nikola/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://the-arctech.github.io/categories/overthewire/</loc>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/categories/python/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://the-arctech.github.io/categories/walkthrough/</loc>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/galleries/</loc>
-  <lastmod>2019-01-09T00:37:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://the-arctech.github.io/index-1.html</loc>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/listings/</loc>
-  <lastmod>2019-01-09T00:37:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://the-arctech.github.io/posts/build-this-blog/</loc>
-  <lastmod>2019-01-10T00:04:00Z</lastmod>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://the-arctech.github.io/posts/overthewire-bandit-walkthrough/</loc>
+  <lastmod>2019-01-10T20:27:00Z</lastmod>
  </url>
 </urlset>

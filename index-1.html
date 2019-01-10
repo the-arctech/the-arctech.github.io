@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="The greatest blog ever.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{arctech} (old posts, page 1) | {arctech}</title>
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="canonical" href="https://the-arctech.github.io/index-1.html">
+<link rel="prev" href="." type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://the-arctech.github.io/">
+
+                <span id="blog-title">{arctech}</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Archive</a>
+                </li>
+<li>
+<a href="categories/">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+    
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/build-this-blog/" class="u-url">Build this blog.</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                arctech
+            </span></p>
+            <p class="dateline">
+            <a href="posts/build-this-blog/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-01-09T00:00:00-05:00" itemprop="datePublished" title="2019-01-09 00:00">2019-01-09 00:00</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h2>Why Nikola, why Python?</h2>
+<p>Good question, relatively simple answer. Both Python and Nikola are the easiest tools you can 
+use when creating a simple and static blog. The exception being the application of Ruby and 
+Jekyll when using github pages. That being said, and as much as I do enjoy Ruby, I prefer to 
+keep my languages and frameworks consistent professionally and personally. The added benefit of 
+Github Pages being able to host static content at no cost (and also not having to maintain a 
+server) seal the deal on this setup for me. </p>
+<h3>What do I need?</h3>
+<p>Im going to make the assumption you are running a Linux machine. If you are not, you have other 
+things you should be addressing before you worry about creating a blog. If you are, then you'll 
+need to get these packages: <code>nikola ghp-import2 python-markdown git</code>. These packages are 
+available in most distro repositories, as well as through pip. The common practice when working 
+on projects such as this is to also get <code>virtualenv</code> and install your libraries/software in 
+the virtual environment, but a development VM or your base OS will be fine as well. </p>
+<h3>Set up your Github repository.</h3>
+<p>This is straightforward for anyone who has used github before. If not, there are tutorials on 
+Github showing you how to set up your "Github Pages" (username.github.io). Dont worry about 
+initializing the repo, the readme, or ignore file. We will do that in the next step. All you 
+need to do is create the repository.</p>
+<h3>Hold my beer.</h3>
+<p>In the next ~7min you're going to have a functioning blog on Github. Its so easy you're going 
+to wonder why you havent done it before. So easy in fact, I'm going to give the instructions in 
+a numbered list.</p>
+<ol>
+<li>Use Nikola to iniate the blog (which creates a directory). This will populate the folder 
+with all the framework you need to get started.
+<code>nikola init &lt;username&gt;.github.io</code>
+</li>
+<li>Change into the new folder and initialize it as a github repository.
+<code>git init .</code>
+<code>git remote add origin git@github.com:&lt;user&gt;/&lt;repository&gt;.git</code>
+</li>
+<li>Open <code>conf.py</code> in your editor of choice (which is vim, right?). Make sure the options 
+you gave when initializing nikola are correct, and make sure your github settings are as 
+follows:
+<pre><code>GITHUB_SOURCE_BRANCH = 'src'
+GITHUB_DEPLOY_BRANCH = 'master'
+GITHUB_REMOTE_NAME = 'origin'
+GITHUB_COMMIT_SOURCE = True</code></pre>
+</li>
+<li>Create the <code>.gitignore</code> file and populate it with <code>cache .doit.db __pycache__ 
+output</code>
+</li>
+<li>Create a test post with <code>nikola new_post -e</code>. This will open your text editor of choice 
+(vim, right?) and pre-populate it with the necessary data. Enter whatever text you wish, make 
+sure its saved in the <code>posts/</code> directory, and save it.</li>
+<li>Build your site with <code>nikola build</code> and correct any errors.</li>
+</ol>
+<h3>WITNESS ME!</h3>
+<p>If you followed the previous steps correctly we can prop up a nikola test server, view our 
+results, and when satisfied push it to Github.
+<code>nikola serve --browser</code>
+This will run a local server and open your default browser to your blog's landing page. Viola! 
+Hit CTRL+C to shut down the server.
+Now, when you're ready to go live simply use Nikola's built in tool <code>nikola github_deploy</code> 
+to send it off to Github. You will be prompted for your username/password if not token'ed up.</p>
+<h2>Enjoy</h2>
+<p>P.S. - You can download themes with <code>nikola theme -i &lt;theme&gt;</code> and use them by adding them 
+in your <code>conf.py</code></p>
+</div>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="." rel="prev">Newer posts</a>
+            </li>
+        </ul></nav>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2019         <a href="mailto:arctech@tuta.io">arctech</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+            <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

@@ -3,114 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="The greatest blog ever.">
-<meta name="viewport" content="width=device-width">
-<title>arctech | arctech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{arctech}</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://the-arctech.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+<link rel="next" href="index-1.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/overthewire-bandit-walkthrough/" type="text/html">
 </head>
-<body class="home blog">
-    <div id="wrap" style="width:850px">
-        <div id="container" style="width:560px">
-            
-            
-        <div class="postbox">
-        <h1 style="size:16px;"><a href="posts/build-this-blog/">Build this blog.</a></h1>
-            <div class="meta" style="background-color: rgb(234, 234, 234); ">
-                <span class="authordate">
-                    Posted: <time class="published" datetime="2019-01-09T00:00:00-05:00">2019-01-09 00:00</time></span>
-                <br><span class="tags">Tags: 
-                            <a class="tag" href="categories/blog/"><span>blog</span></a>
-                            <a class="tag" href="categories/github/"><span>github</span></a>
-                            <a class="tag" href="categories/nikola/"><span>nikola</span></a>
-                            <a class="tag" href="categories/python/"><span>python</span></a>
-                </span>
-            </div>
-        <div>
-<h2>Why Nikola, why Python?</h2>
-<p>Good question, relatively simple answer. Both Python and Nikola are the easiest tools you can 
-use when creating a simple and static blog. The exception being the application of Ruby and 
-Jekyll when using github pages. That being said, and as much as I do enjoy Ruby, I prefer to 
-keep my languages and frameworks consistent professionally and personally. The added benefit of 
-Github Pages being able to host static content at no cost (and also not having to maintain a 
-server) seal the deal on this setup for me. </p>
-<h3>What do I need?</h3>
-<p>Im going to make the assumption you are running a Linux machine. If you are not, you have other 
-things you should be addressing before you worry about creating a blog. If you are, then you'll 
-need to get these packages: <code>nikola ghp-import2 python-markdown git</code>. These packages are 
-available in most distro repositories, as well as through pip. The common practice when working 
-on projects such as this is to also get <code>virtualenv</code> and install your libraries/software in 
-the virtual environment, but a development VM or your base OS will be fine as well. </p>
-<h3>Set up your Github repository.</h3>
-<p>This is straightforward for anyone who has used github before. If not, there are tutorials on 
-Github showing you how to set up your "Github Pages" (username.github.io). Dont worry about 
-initializing the repo, the readme, or ignore file. We will do that in the next step. All you 
-need to do is create the repository.</p>
-<h3>Hold my beer.</h3>
-<p>In the next ~7min you're going to have a functioning blog on Github. Its so easy you're going 
-to wonder why you havent done it before. So easy in fact, I'm going to give the instructions in 
-a numbered list.</p>
-<ol>
-<li>Use Nikola to iniate the blog (which creates a directory). This will populate the folder 
-with all the framework you need to get started.
-<code>nikola init &lt;username&gt;.github.io</code>
-</li>
-<li>Change into the new folder and initialize it as a github repository.
-<code>git init .</code>
-<code>git remote add origin git@github.com:&lt;user&gt;/&lt;repository&gt;.git</code>
-</li>
-<li>Open <code>conf.py</code> in your editor of choice (which is vim, right?). Make sure the options 
-you gave when initializing nikola are correct, and make sure your github settings are as 
-follows:
-<pre><code>GITHUB_SOURCE_BRANCH = 'src'
-GITHUB_DEPLOY_BRANCH = 'master'
-GITHUB_REMOTE_NAME = 'origin'
-GITHUB_COMMIT_SOURCE = True</code></pre>
-</li>
-<li>Create the <code>.gitignore</code> file and populate it with <code>cache .doit.db __pycache__ 
-output</code>
-</li>
-<li>Create a test post with <code>nikola new_post -e</code>. This will open your text editor of choice 
-(vim, right?) and pre-populate it with the necessary data. Enter whatever text you wish, make 
-sure its saved in the <code>posts/</code> directory, and save it.</li>
-<li>Build your site with <code>nikola build</code> and correct any errors.</li>
-</ol>
-<h3>WITNESS ME!</h3>
-<p>If you followed the previous steps correctly we can prop up a nikola test server, view our 
-results, and when satisfied push it to Github.
-<code>nikola serve --browser</code>
-This will run a local server and open your default browser to your blog's landing page. Viola! 
-Hit CTRL+C to shut down the server.
-Now, when you're ready to go live simply use Nikola's built in tool <code>nikola github_deploy</code> 
-to send it off to Github. You will be prompted for your username/password if not token'ed up.</p>
-<h2>Enjoy</h2>
-<p>P.S. - You can download themes with <code>nikola theme -i &lt;theme&gt;</code> and use them by adding them 
-in your <code>conf.py</code></p>
-</div>
-            
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://the-arctech.github.io/">
+
+                <span id="blog-title">{arctech}</span>
+            </a>
         </div>
-    <!--
-    
-
-    
-
-    
--->
-
-        </div>
-        <div id="sidebar">
-            <!--Sidebar content-->
-            <h1 id="blog-title">
-                <a href="https://the-arctech.github.io/" title="arctech">arctech</a>
-            </h1>
-            
-            
-            <ul class="unstyled">
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
 <li>
-            
-                <li>
 <a href="archive.html">Archive</a>
                 </li>
 <li>
@@ -119,24 +44,169 @@ in your <code>conf.py</code></p>
 <li>
 <a href="rss.xml">RSS feed</a>
 
+                
             </li>
-<li>
-            
-            
-            </ul>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
 </div>
-        <div id="footer">
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+    
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/overthewire-bandit-walkthrough/" class="u-url">OverTheWire: Bandit - Walkthrough</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                arctech
+            </span></p>
+            <p class="dateline">
+            <a href="posts/overthewire-bandit-walkthrough/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-01-10T12:05:12-05:00" itemprop="datePublished" title="2019-01-10 12:05">2019-01-10 12:05</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><strong> NOTE: Levels 24-35 have been added to Bandit, and I will be including them in a 
+separate walkthrough </strong></p>
+<h3>Using this guide:</h3>
+<p>If you are copy/pasting these solutions, YOU ARE WRONG! That is NOT what this walkthrough is for. If you read the documentation, excercised your google-fu, experimented and still don't know how to proceed.. then you refer to the number and solution below. See what the correct answer is, figure out WHY it is the correct answer, and only then type it in yourself and continue. Anything short of this is doing you no favors.</p>
+<h4>OverTheWire</h4>
+<p>Overthewire.org hosts a litany of machines available for those who desire to learn or practice 
+their infosec skills. Their boxes start at 'no skill' and increase in difficulty. OTW provides 
+this service for free to the public, so I strongly encourange anyone who 
+uses or benefits from it to drop them a donation to help keep them up! </p>
+<h4>Bandit</h4>
+<p>The bandit machine is an introductory box used to teach the basics of Linux and server 
+administration. It is accessed and completed through SSH. To start the 
+challenges, all you need to do is drop <code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code> 
+into your 
+terminal. If you are having trouble or struggling or can't figure out how you are supposed to 
+progress to the nexel stage <a href="https://overthewire.org/wargames/bandit/">overthewire</a> has a level by level set of 
+instructions.</p>
+<h4>The Walkthrough:</h4>
+<p>The majority of the 'levels' on bandit can be completed in under 1 minute. Yes, this box is 
+that easy. As such, I'm only going to provide you with the minimum amount of information needed 
+to complete each level. If you don't understand how the tool or command works I STRONGLY 
+encourage you to read the informative links provided for each level on <a href="https://overthewire.org/wargames/bandit">overthewire</a>.</p>
+<pre>
+bandit0: cat readme
+bandit1: nano + CTRL+R +'-'
+bandit2: cat spaces\ in\ this\ filename
+bandit3: ls -la inhere
+bandit4: find inhere ! -executable -readable
+bandit5: find inhere -readable ! -executable -size 1033c
+bandit6: find / -user bandit7 -group bandit6 -size 33c
+bandit7: cat data.txt | grep millionth
+bandit8: cat data.txt | sort | uniq -u
+bandit9: strings data.txt | grep ==
+bandit10: base64 -d data.txt
+bandit11: cat data.txt | tr a-zA-Z n-za-mN-ZA-M (OR rot13.com)
+bandit12: -- 
+    cat data.txt | sort | uniq -u
+    file data.txt
+    zcat data.txt &gt; datanew
+    file datanew
+    bzip2 -d datanew
+    file datanew.out
+    zcat datanew.out &gt; datanew
+    file datanew
+    tar -xvf datanew
+    file data5.bin
+    tar -xvf data5.bin
+    file data6.bin
+    bzip2 -d data6.bin
+    file data6.bin.out
+    tar -xvf data6.bin.out
+    file data8.bin
+    zcat data8.bin &gt; holycrap
+    file holycrap
+    cat holycrap
+bandit13: ssh -i sshkey.private bandit14@localhost  (This is an internal pivot!!)
+bandit14: telnet localhost 30000 
+        * submit password of current level to the server
+bandit15: openssl s_client -connect localhost:30001 
+        * submit current level pass again
+bandit16: --
+    nmap -sV -p 31000-32000 localhost
+    openssl s_client -connect localhost:31790
+    (submit current level pass)
+    mkdir /tmp/obfuscated-name
+    cd /tmp/obfuscated-name
+     * copy RSA key from SSL connection
+    vi sshkey.private
+     * save it
+    chmod 600 sshkey.private
+    ssh -i sshkey.private bandit12@localhost      
+bandit17: diff passwords.new passwords.old
+bandit18: ssh bandit18@bandit.labs.overthewire.org cat readme
+bandit19: ./bandit20-do cat /etc/bandit_pass/bandit20
+bandit20: --
+    nc -l 7331
+      * CTRL+Z
+    ./suconnect 7331
+      * CTRL+Z
+    jobs 1
+      * submit current password
+      * CTRL+Z
+    jobs 2
+      * suconnect pushes password
+      * CTRL+Z
+    jobs 1
+    (please make sure all processes are stopped before you exit!!)
+bandit21: --
+    cat /usr/bin/cronjob_bandit22.sh
+    cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+bandit22: --
+    cat /etc/cron.d/cronjob_bandit23
+    cat /usr/bin/cronjob_bandit23.sh
+    sh /usr/bin/cronjob_bandit23.sh
+    echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+bandit23: --
+    cat /etc/cron.d/cronjob_24.sh
+    mkdir /tmp/skjdhf
+    cd /tmp/skjdhf
+    echo "cat /etc/bandit_pass/bandit24 &gt;&gt; /tmp/skjdhf/pass.txt" &gt; myscript.sh
+    chmod 777 myscript.sh
+    chmod -R 777 /tmp/skjdhf
+    cp myscript.sh /var/spool/bandit24
+        * wait ~1min
+    cat pass.txt
+
+</pre>
+</div>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="next">
+                <a href="index-1.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
             Contents © 2019         <a href="mailto:arctech@tuta.io">arctech</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
-        </div>
-    </div>
-    
-            <script src="assets/js/all-nocdn.js"></script><!--    <script>
+        </footer>
+</div>
+</div>
+
+            <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {
             return element.getElementsByTagName('img')[0].alt;
     }});
-    </script>-->
+    </script>
 </body>
 </html>
